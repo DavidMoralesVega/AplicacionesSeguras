@@ -1,3 +1,4 @@
+<?php ob_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,12 +25,6 @@
                 $LinkValidate = new LinkControllers();
                 $LinkValidate -> LinkValidateContoller();
             ?>
-            <i class="fas fa-code"></i>
-            <h1 class="cover-heading">Cover your page.</h1>
-            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-            <p class="lead">
-                <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-            </p>
         </main>
         <?php
             $Footer = new TemplateControllers();
@@ -37,5 +32,10 @@
         ?>
     </div>
 </body>
+<script src="views/resources/js/jquery-3.4.1.slim.min.js"></script>
+<script src="views/resources/js/popper.min.js"></script>
+<script src="views/resources/js/bootstrap.min.js"></script>
+<script src="views/resources/js/user.js"></script>
 
 </html>
+<?php ob_end_flush(); ?>
